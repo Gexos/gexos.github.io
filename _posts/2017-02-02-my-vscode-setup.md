@@ -57,9 +57,9 @@ Note: strikethrough means features were implemented, either in the [insider buil
 * ~~Git status in file explorer: [vscode#178]( https://github.com/Microsoft/vscode/issues/178)~~
 * ~~Minimap: [vscode#4865](https://github.com/Microsoft/vscode/issues/4865)~~
 * Use variables in settings for cross-platform development:
-    * Define (Python) settings based on variables and overrides: [pythonVSCode#644](https://github.com/DonJayamanne/pythonVSCode/issues/644)
+  * Python extension specifics:
+      * Define (Python) settings based on variables and overrides: [pythonVSCode#644](https://github.com/DonJayamanne/pythonVSCode/issues/644)
       * ~~Improved support for python settings (auto-detect interpreter): [pythonVSCode#353](https://github.com/DonJayamanne/pythonVSCode/issues/353)~~
-      * ~~Support file-type-specific settings: [pythonVSCode#1587](https://github.com/Microsoft/vscode/issues/1587#issuecomment-273397301)~~
       * Auto-detection of binaries [pythonVSCode#716](https://github.com/DonJayamanne/pythonVSCode/issues/716)
     * Create and use variables in settings and workspace settings:
       * Create environment variable within user/workspace settings: [vscode#18709](https://github.com/Microsoft/vscode/issues/18709)
@@ -67,6 +67,7 @@ Note: strikethrough means features were implemented, either in the [insider buil
       * Add OS-specific dependency PATHs: [vscode#17619](https://github.com/Microsoft/vscode/issues/17619#issuecomment-273424889)
     * Use $home variable in project manager:
       * ~~Support cross platform path definitions ($HOME) [vscode-project-manager#88](https://github.com/alefragnani/vscode-project-manager/issues/88)~~
+* ~~Support file-type-specific settings: [pythonVSCode#1587](https://github.com/Microsoft/vscode/issues/1587#issuecomment-273397301)~~
 * ~~Automatically expand full docstring when autocompleting: [vscode#18582](https://github.com/Microsoft/vscode/issues/18582)~~
 * Disable auto-completion when writing comments/docstrings: [pythonVSCode#74](https://github.com/DonJayamanne/pythonVSCode/issues/74)
 * ~~Sync Color Theme Settings: [code-settings-sync#185](https://github.com/shanalikhan/code-settings-sync/issues/185)~~
