@@ -54,7 +54,7 @@ So, there are some functionality I'm still missing which I'm closely tracking vi
 
 Note: strikethrough means features were implemented, either in the [insider build](https://code.visualstudio.com/insiders) of vscode or in the affected extension.
 
-* Git status in file explorer: [vscode#178]( https://github.com/Microsoft/vscode/issues/178)
+* ~~Git status in file explorer: [vscode#178]( https://github.com/Microsoft/vscode/issues/178)~~
 * ~~Minimap: [vscode#4865](https://github.com/Microsoft/vscode/issues/4865)~~
 * Define Python settings based on variables and overrides: [pythonVSCode#644](https://github.com/DonJayamanne/pythonVSCode/issues/644)
   * ~~Improved support for python settings (auto-detect interpreter): [pythonVSCode#353](https://github.com/DonJayamanne/pythonVSCode/issues/353)~~
@@ -63,11 +63,11 @@ Note: strikethrough means features were implemented, either in the [insider buil
   * Support environment variables when resolving values in settings: [vscode#2809](https://github.com/Microsoft/vscode/issues/2809)
   * Add OS-specific dependency PATHs: [vscode#17619](https://github.com/Microsoft/vscode/issues/17619#issuecomment-273424889)
   * Auto-detection of binaries [pythonVSCode#716](https://github.com/DonJayamanne/pythonVSCode/issues/716)
-* Automatically expand full docstring when autocompleting: [vscode#18582](https://github.com/Microsoft/vscode/issues/18582)
+* ~~Automatically expand full docstring when autocompleting: [vscode#18582](https://github.com/Microsoft/vscode/issues/18582)~~
 * Disable auto-completion when writing comments/docstrings: [pythonVSCode#74](https://github.com/DonJayamanne/pythonVSCode/issues/74)
 * ~~Sync Color Theme Settings: [code-settings-sync#185](https://github.com/shanalikhan/code-settings-sync/issues/185)~~
 * ~~Option to ignore sync some settings, files and folders: [code-settings-sync#100](https://github.com/shanalikhan/code-settings-sync/issues/100)~~
-* Support cross platform path definitions ($HOME) [vscode-project-manager#88](https://github.com/alefragnani/vscode-project-manager/issues/88)
+* ~~Support cross platform path definitions ($HOME) [vscode-project-manager#88](https://github.com/alefragnani/vscode-project-manager/issues/88)~~
 
 I also wasn't able to find a Material theme which resembled the one I wanted to use, so I created [one](https://github.com/fredrikaverpil/vscode-material-theme). It's identical to the `Material-Theme.tmTheme` by [Mattia Astorino](https://github.com/equinusocio) which I used to have in ST3. There are talks about opening up the UI API ([vscode#1833](https://github.com/Microsoft/vscode/issues/1833), [vscode#3112](https://github.com/Microsoft/vscode/issues/3112)) to allow for the kind of UI customization Mattia has been doing with ST3 and it seems like he might be [looking to use that](https://github.com/equinusocio/vsc-material-theme) when possible, wich would be awesome.
 
@@ -125,11 +125,16 @@ Pyhton-specifics in my `settings.json` (user settings).
 
     // only for python language files
     "[python]": {
-        "editor.rulers": [72, 79]
+        "editor.rulers": [
+            72,
+            79
+        ],
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true
     },
 
     // pythonVSCode extension
-    "python.pythonPath": "/Users/fredrik/miniconda3/envs/dev_py35",
+    "python.pythonPath": "${env.HOME}/miniconda3/envs/dev_py35",
     "python.linting.pylintEnabled": true,
     "python.linting.flake8Enabled": false,
     "python.linting.pep8Enabled": true,
@@ -139,7 +144,44 @@ Pyhton-specifics in my `settings.json` (user settings).
 }
 ```
 
-Please note how you don't have to specify the full path to the Python binary. This works cross-platform!
+Please note that there's a long-standing issue with auto-detecting pylint, pep8, flake8, yapf etc: [pythonVSCode#716](https://github.com/DonJayamanne/pythonVSCode/issues/716)
+
+
+### Other settings
+
+```json
+    // Editor
+    "editor.minimap.enabled": true,
+    "editor.minimap.renderCharacters": false,
+    "editor.detectIndentation": true,
+    "editor.roundedSelection": false,
+    "editor.renderIndentGuides": true,
+    "editor.formatOnPaste": true,
+
+    // Explorer
+    "explorer.openEditors.visible": 0,
+
+    // Files
+    "files.insertFinalNewline": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/__pycache__": true,
+        "**/**/*.pyc": true
+    },
+    "files.associations": {
+        "Brewfile": "ruby",
+        "vimrc": "viml"
+    },
+
+    // Window - prevent blurry text on secondary monitor
+    "window.zoomLevel": 0,
+
+    // Word-wrap markdown
+    "[markdown]": {
+        "editor.wordWrap": "on"
+    }
+```
 
 
 #### Other extension settings
@@ -148,13 +190,15 @@ Please note how you don't have to specify the full path to the Python binary. Th
 {
     // Trailing spaces
     "trailing-spaces.trimOnSave": true,
-
+    "trailing-spaces.syntaxIgnore": [
+        "markdown"
+    ],
+    
     // Project manager
     "projectManager.openInNewWindow": false,
     "projectManager.sortList": "Name",
     "projectManager.git.baseFolders": [
-        "/Users/fredrik/code/repos",
-        "C:/Users/fredrik/code/repos"
+        "$home/code/repos"
     ]
 
 }
