@@ -54,7 +54,7 @@ So, there are some functionality I'm still missing which I'm closely tracking vi
 
 Note: strikethrough means features were implemented, either in the [insider build](https://code.visualstudio.com/insiders) of vscode or in the affected extension.
 
-* ~~Git status in file explorer: [vscode#178]( https://github.com/Microsoft/vscode/issues/178)~~
+* ~~Git status in file explorer: [vscode#178]( https://github.com/Microsoft/vscode/issues/178)~~
 * ~~Minimap: [vscode#4865](https://github.com/Microsoft/vscode/issues/4865)~~
 * Use variables in settings for cross-platform development:
     * Define (Python) settings based on variables and overrides: [pythonVSCode#644](https://github.com/DonJayamanne/pythonVSCode/issues/644)
