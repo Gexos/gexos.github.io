@@ -56,7 +56,7 @@ Note: strikethrough means features were implemented, either in the [insider buil
 
 * ~~Git status in file explorer: [vscode#178]( https://github.com/Microsoft/vscode/issues/178)~~
 * ~~Minimap: [vscode#4865](https://github.com/Microsoft/vscode/issues/4865)~~
-* Define Python settings based on variables and overrides: [pythonVSCode#644](https://github.com/DonJayamanne/pythonVSCode/issues/644)
+* Define (Python) settings based on variables and overrides: [pythonVSCode#644](https://github.com/DonJayamanne/pythonVSCode/issues/644)
   * ~~Improved support for python settings (auto-detect interpreter): [pythonVSCode#353](https://github.com/DonJayamanne/pythonVSCode/issues/353)~~
   * ~~Support file-type-specific settings: [pythonVSCode#1587](https://github.com/Microsoft/vscode/issues/1587#issuecomment-273397301)~~
   * Create environment variable within user/workspace settings: [vscode#18709](https://github.com/Microsoft/vscode/issues/18709)
@@ -73,9 +73,11 @@ I also wasn't able to find a Material theme which resembled the one I wanted to 
 
 Worth mentioning is that [a lot of work](https://github.com/Microsoft/vscode/pull/17933) was done on the TextMate tokenization in vscode 1.9 which now allows for the Material theme (and others) to render like intended. This work also opens up for a minimap (!).
 
-**Update**: minimap was released with vscode 1.10!
+**Update #1**: minimap was released with vscode 1.10!
 
-**Update**: vscode 1.11 was released with initial theming support and Mattia released the excellent [Material Theme for Visual Studio Code](https://github.com/equinusocio/vsc-material-theme). In case you're using my theme, stop doing that (I won't update mine) and download his theme instead!
+**Update #2**: vscode 1.11 was released with initial theming support and Mattia released the excellent [Material Theme for Visual Studio Code](https://github.com/equinusocio/vsc-material-theme). In case you're using my theme, stop doing that (I won't update mine) and download his theme instead!
+
+**Update #3**: Git status is being implemented!
 
 
 ## My setup (`settings.json`)
@@ -144,7 +146,7 @@ Pyhton-specifics in my `settings.json` (user settings).
 }
 ```
 
-Please note that there's a long-standing issue with auto-detecting pylint, pep8, flake8, yapf etc: [pythonVSCode#716](https://github.com/DonJayamanne/pythonVSCode/issues/716)
+**Update:** Please note that there's a long-standing issue with auto-detecting pylint, pep8, flake8, yapf etc: [pythonVSCode#716](https://github.com/DonJayamanne/pythonVSCode/issues/716)
 
 
 ### Other settings
