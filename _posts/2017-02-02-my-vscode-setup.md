@@ -4,7 +4,7 @@ title: My Visual Studio Code setup
 tags: [python, osx, windows, linux]
 ---
 
-![](https://cloud.githubusercontent.com/assets/994357/22574280/55963086-e9ae-11e6-8469-2c26a255f1ad.png)
+![](https://user-images.githubusercontent.com/994357/31710626-da6d75be-b3f5-11e7-9c34-abd1bd7e1c32.png)
 
 This is my [Visual Studio Code](https://code.visualstudio.com) (vscode) setup, with ambitions to create a custom Python IDE.
 
@@ -54,28 +54,35 @@ So, there are some functionality I'm still missing which I'm closely tracking vi
 
 Note: strikethrough means features were implemented, either in the [insider build](https://code.visualstudio.com/insiders) of vscode or in the affected extension.
 
-* Git status in file explorer: [vscode#178]( https://github.com/Microsoft/vscode/issues/178)
+* ~~Git status in file explorer: [vscode#178]( https://github.com/Microsoft/vscode/issues/178)~~
 * ~~Minimap: [vscode#4865](https://github.com/Microsoft/vscode/issues/4865)~~
-* Define Python settings based on variables and overrides: [pythonVSCode#644](https://github.com/DonJayamanne/pythonVSCode/issues/644)
-  * ~~Improved support for python settings (auto-detect interpreter): [pythonVSCode#353](https://github.com/DonJayamanne/pythonVSCode/issues/353)~~
-  * ~~Support file-type-specific settings: [pythonVSCode#1587](https://github.com/Microsoft/vscode/issues/1587#issuecomment-273397301)~~
-  * Create environment variable within user/workspace settings: [vscode#18709](https://github.com/Microsoft/vscode/issues/18709)
-  * Support environment variables when resolving values in settings: [vscode#2809](https://github.com/Microsoft/vscode/issues/2809)
-  * Add OS-specific dependency PATHs: [vscode#17619](https://github.com/Microsoft/vscode/issues/17619#issuecomment-273424889)
-  * Auto-detection of binaries [pythonVSCode#716](https://github.com/DonJayamanne/pythonVSCode/issues/716)
-* Automatically expand full docstring when autocompleting: [vscode#18582](https://github.com/Microsoft/vscode/issues/18582)
+* Use variables in settings for cross-platform development:
+  * Create and use variables in settings and workspace settings:
+    * Create environment variable within user/workspace settings: [vscode#18709](https://github.com/Microsoft/vscode/issues/18709)
+    * Support environment variables when resolving values in settings: [vscode#2809](https://github.com/Microsoft/vscode/issues/2809)
+    * Add OS-specific dependency PATHs: [vscode#17619](https://github.com/Microsoft/vscode/issues/17619#issuecomment-273424889)
+  * Python extension specifics:
+    * Define (Python) settings based on variables and overrides: [pythonVSCode#644](https://github.com/DonJayamanne/pythonVSCode/issues/644)
+    * ~~Improved support for python settings (auto-detect interpreter): [pythonVSCode#353](https://github.com/DonJayamanne/pythonVSCode/issues/353)~~
+    * Auto-detection of binaries [pythonVSCode#716](https://github.com/DonJayamanne/pythonVSCode/issues/716)
+  * Project manager specifics:
+    * ~~Support cross platform path definitions ($HOME) [vscode-project-manager#88](https://github.com/alefragnani/vscode-project-manager/issues/88)~~
+* ~~Support file-type-specific settings: [pythonVSCode#1587](https://github.com/Microsoft/vscode/issues/1587#issuecomment-273397301)~~
+* ~~Automatically expand full docstring when autocompleting: [vscode#18582](https://github.com/Microsoft/vscode/issues/18582)~~
 * Disable auto-completion when writing comments/docstrings: [pythonVSCode#74](https://github.com/DonJayamanne/pythonVSCode/issues/74)
 * ~~Sync Color Theme Settings: [code-settings-sync#185](https://github.com/shanalikhan/code-settings-sync/issues/185)~~
 * ~~Option to ignore sync some settings, files and folders: [code-settings-sync#100](https://github.com/shanalikhan/code-settings-sync/issues/100)~~
-* Support cross platform path definitions ($HOME) [vscode-project-manager#88](https://github.com/alefragnani/vscode-project-manager/issues/88)
+* Publicly monitor power-usage progress: [vscode#22074](https://github.com/Microsoft/vscode/issues/22074)
 
 I also wasn't able to find a Material theme which resembled the one I wanted to use, so I created [one](https://github.com/fredrikaverpil/vscode-material-theme). It's identical to the `Material-Theme.tmTheme` by [Mattia Astorino](https://github.com/equinusocio) which I used to have in ST3. There are talks about opening up the UI API ([vscode#1833](https://github.com/Microsoft/vscode/issues/1833), [vscode#3112](https://github.com/Microsoft/vscode/issues/3112)) to allow for the kind of UI customization Mattia has been doing with ST3 and it seems like he might be [looking to use that](https://github.com/equinusocio/vsc-material-theme) when possible, wich would be awesome.
 
 Worth mentioning is that [a lot of work](https://github.com/Microsoft/vscode/pull/17933) was done on the TextMate tokenization in vscode 1.9 which now allows for the Material theme (and others) to render like intended. This work also opens up for a minimap (!).
 
-**Update**: minimap was released with vscode 1.10!
+**Update #1**: minimap was released with vscode 1.10!
 
-**Update**: vscode 1.11 was released with initial theming support and Mattia released the excellent [Material Theme for Visual Studio Code](https://github.com/equinusocio/vsc-material-theme). In case you're using my theme, stop doing that (I won't update mine) and download his theme instead!
+**Update #2**: vscode 1.11 was released with initial theming support and Mattia released the excellent [Material Theme for Visual Studio Code](https://github.com/equinusocio/vsc-material-theme). In case you're using my theme, stop doing that (I won't update mine) and download his theme instead!
+
+**Update #3**: Git status is being implemented!
 
 
 ## My setup (`settings.json`)
@@ -125,11 +132,16 @@ Pyhton-specifics in my `settings.json` (user settings).
 
     // only for python language files
     "[python]": {
-        "editor.rulers": [72, 79]
+        "editor.rulers": [
+            72,
+            79
+        ],
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true
     },
 
     // pythonVSCode extension
-    "python.pythonPath": "/Users/fredrik/miniconda3/envs/dev_py35",
+    "python.pythonPath": "${env.HOME}/miniconda3/envs/dev_py35",
     "python.linting.pylintEnabled": true,
     "python.linting.flake8Enabled": false,
     "python.linting.pep8Enabled": true,
@@ -139,7 +151,46 @@ Pyhton-specifics in my `settings.json` (user settings).
 }
 ```
 
-Please note how you don't have to specify the full path to the Python binary. This works cross-platform!
+Please note that on Windows, `${env.HOMEPATH}` should be used (not `${env.HOME}`).
+
+**Update:** Please note that there's a long-standing issue with auto-detecting pylint, pep8, flake8, yapf etc: [pythonVSCode#716](https://github.com/DonJayamanne/pythonVSCode/issues/716)
+
+
+### Other settings
+
+```json
+    // Editor
+    "editor.minimap.enabled": true,
+    "editor.minimap.renderCharacters": false,
+    "editor.detectIndentation": true,
+    "editor.roundedSelection": false,
+    "editor.renderIndentGuides": true,
+    "editor.formatOnPaste": true,
+
+    // Explorer
+    "explorer.openEditors.visible": 0,
+
+    // Files
+    "files.insertFinalNewline": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/__pycache__": true,
+        "**/**/*.pyc": true
+    },
+    "files.associations": {
+        "Brewfile": "ruby",
+        "vimrc": "viml"
+    },
+
+    // Window - prevent blurry text on secondary monitor
+    "window.zoomLevel": 0,
+
+    // Word-wrap markdown
+    "[markdown]": {
+        "editor.wordWrap": "on"
+    }
+```
 
 
 #### Other extension settings
@@ -148,13 +199,15 @@ Please note how you don't have to specify the full path to the Python binary. Th
 {
     // Trailing spaces
     "trailing-spaces.trimOnSave": true,
-
+    "trailing-spaces.syntaxIgnore": [
+        "markdown"
+    ],
+    
     // Project manager
     "projectManager.openInNewWindow": false,
     "projectManager.sortList": "Name",
     "projectManager.git.baseFolders": [
-        "/Users/fredrik/code/repos",
-        "C:/Users/fredrik/code/repos"
+        "$home/code/repos"
     ]
 
 }
@@ -169,7 +222,7 @@ This is great if you e.g. wish to override the Python interpreter (used for debu
 
 ```json
 {
-    "python.pythonPath": "${workspaceRoot}/../../../condaenvs/app_py35/",
+    "python.pythonPath": "${workspaceFolder}/../../../condaenvs/app_py35/",
     "python.linting.pylintArgs": ["--disable=E0611"],
     "python.autoComplete.extraPaths": [
         "/Applications/Autodesk/maya2017/Maya.app/Contents/Frameworks/Python.framework/Versions/Current/lib/python27.zip",
@@ -202,10 +255,10 @@ You can create tasks which you can invoke with `Tasks: Run tasks` from the comma
             "taskName": "Build docs",
             "command": "dummy",
             "osx": {
-                "command": "${workspaceRoot}/../../../condaenvs/app_py35/bin/python ${workspaceRoot}/scripts/build_docs/build_docs.py"
+                "command": "${workspaceFolder}/../../../condaenvs/app_py35/bin/python ${workspaceFolder}/scripts/build_docs/build_docs.py"
             },
             "windows": {
-                "command": "${workspaceRoot}/../../../condaenvs/app_py35/Python.exe ${workspaceRoot}/scripts/build_docs/build_docs.py"
+                "command": "${workspaceFolder}/../../../condaenvs/app_py35/Python.exe ${workspaceFolder}/scripts/build_docs/build_docs.py"
             },
             "isShellCommand": true,
             "isBackground": false
@@ -214,10 +267,10 @@ You can create tasks which you can invoke with `Tasks: Run tasks` from the comma
             "taskName": "Run My app",
             "command": "dummy",
             "osx": {
-                "command": "$HOME/../../../condaenvs/app_py35/bin/python ${workspaceRoot}/scripts/standalone_gui/standalone_gui.py"
+                "command": "$HOME/../../../condaenvs/app_py35/bin/python ${workspaceFolder}/scripts/standalone_gui/standalone_gui.py"
             },
             "windows": {
-                "command": "%HOMEDRIVE%%HOMEPATH%/../../../condaenvs/app_py35/python.exe ${workspaceRoot}/scripts/standalone_gui/standalone_gui.py"
+                "command": "%HOMEDRIVE%%HOMEPATH%/../../../condaenvs/app_py35/python.exe ${workspaceFolder}/scripts/standalone_gui/standalone_gui.py"
             },
             "isShellCommand": true,
             "isBackground": false
@@ -238,8 +291,8 @@ And then we have the debugger. The debugger settings are stored in `your_project
             "request": "launch",
             "stopOnEntry": false,
             "pythonPath": "${config.python.pythonPath}",
-            "program": "${workspaceRoot}/scripts/standalone_gui/standalone_gui.py",
-            "cwd": "${workspaceRoot}",
+            "program": "${workspaceFolder}/scripts/standalone_gui/standalone_gui.py",
+            "cwd": "${workspaceFolder}",
             "debugOptions": [
                 "WaitOnAbnormalExit",
                 "WaitOnNormalExit",
@@ -253,7 +306,7 @@ And then we have the debugger. The debugger settings are stored in `your_project
             "stopOnEntry": true,
             "pythonPath": "${config.python.pythonPath}",
             "program": "${file}",
-            "cwd": "${workspaceRoot}",
+            "cwd": "${workspaceFolder}",
             "debugOptions": [
                 "WaitOnAbnormalExit",
                 "WaitOnNormalExit",
