@@ -50,12 +50,13 @@ The fluorescent shot and the tungsten shot were both taken in a dark room with e
 *Presets comparison. Click image for larger version.*
 
 
-* [X100S Fredrik – Film](https://github.com/fredrikaverpil/photography/raw/master/Lightroom/Presets/X100S%20Fredrik%20-%20Film.lrtemplate) – cool film look
-* [X100S Fredrik – Film (vivid)](https://github.com/fredrikaverpil/photography/raw/master/Lightroom/Presets/X100S%20Fredrik%20-%20Film%20(vivid).lrtemplate) – warm and vivid film look
-* [X100S Fredrik – Neutral](https://github.com/fredrikaverpil/photography/raw/master/Lightroom/Presets/X100S%20Fredrik%20-%20Neutral.lrtemplate) – a good starting point
-* [X100S Fredrik – Neutral (faded)](https://github.com/fredrikaverpil/photography/raw/master/Lightroom/Presets/X100S%20Fredrik%20-%20Neutral%20(faded).lrtemplate) – trying to mimic Astia
-* [X100S Fredrik – Neutral (punchy)](https://github.com/fredrikaverpil/photography/raw/master/Lightroom/Presets/X100S%20Fredrik%20-%20Neutral%20(punchy).lrtemplate) – a bit more contrasty
+* [X100S Fredrik – Film](https://github.com/fredrikaverpil/photography/raw/master/Lightroom/Presets/Legacy/X100S%20Fredrik%20-%20Film.lrtemplate) – cool film look
+* [X100S Fredrik – Film (vivid)](https://github.com/fredrikaverpil/photography/raw/master/Lightroom/Presets/Legacy/X100S%20Fredrik%20-%20Film%20(vivid).lrtemplate) – warm and vivid film look
+* [X100S Fredrik – Neutral](https://github.com/fredrikaverpil/photography/raw/master/Lightroom/Presets/Legacy/X100S%20Fredrik%20-%20Neutral.lrtemplate) – a good starting point
+* [X100S Fredrik – Neutral (faded)](https://github.com/fredrikaverpil/photography/raw/master/Lightroom/Presets/Legacy/X100S%20Fredrik%20-%20Neutral%20(faded).lrtemplate) – trying to mimic Astia
+* [X100S Fredrik – Neutral (punchy)](https://github.com/fredrikaverpil/photography/raw/master/Lightroom/Presets/Legacy/X100S%20Fredrik%20-%20Neutral%20(punchy).lrtemplate) – a bit more contrasty
 
+**Update:** Newer, more up to date presets are found [here](https://github.com/fredrikaverpil/photography/tree/master/Lightroom/Presets).
 
 Please note, you may want to download the presets by right-clicking the links and choosing the “save as...” option. All presets use the camera profile “Fujifilm X100S (Sun only)” and were made with Lightroom 5.
 
