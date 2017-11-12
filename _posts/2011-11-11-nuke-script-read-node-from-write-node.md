@@ -5,7 +5,7 @@ tags: [nuke, python]
 ---
 
 <div class="message">
-  Howdy! There's a newer version of this script <a href="{{ site.url }}/2016/05/23/nuke-script-read-node-from-write-node">here</a>.
+  Howdy! There's a newer version of this script <a href="/2016/05/23/nuke-script-read-node-from-write-node">here</a>.
 </div>
 
 Written in Python, with Nuke 6.9 in mind, generate a Read node from the selected Write node.
