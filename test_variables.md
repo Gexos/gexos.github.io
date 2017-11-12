@@ -1,2 +1,0 @@
-{{ site.url }}
-{{ site.baseurl }}
