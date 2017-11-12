@@ -26,10 +26,11 @@ This blog is based on the excellent [Hyde]({{ site.hyde_repo }}) theme (v{{ site
 - Excerpts on index page
 - Pinch and zoom on touch devices
 - Video embeds with fluidvids.js
-- Rouge syntax highlighter, `syntax-one-dark.css`
+- Rouge syntax highlighter, modified version of [`dracula.css`](https://github.com/dracula/pygments)
 - Google Analytics
 - Comments (option to use Google+ or Disqus)
 - Switch to https if accessing site through http
 - Jekyll SEO
+- Custom domain
 
 The source code for this blog is available [here]({{ site.github.repo }}).
