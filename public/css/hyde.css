@@ -56,8 +56,8 @@ html {
 .sidebar {
   text-align: center;
   padding: 2rem 1rem;
-  color: #9da5b4;
-  background-color: #21252b;
+  color: rgba(255,255,255,.5);
+  background-color: #202020;
 }
 @media (min-width: 48em) {
   .sidebar {
@@ -98,14 +98,6 @@ a.sidebar-nav-item:focus {
 .sidebar-nav-item.active {
   font-weight: bold;
 }
-.sidebar-nav-icons {
-  margin-top: 0.4rem;
-  display: inline-block;
-  line-height: 1.75;
-  height: 1.75;
-  vertical-align: bottom;
-}
-
 
 /* Sticky sidebar
  *

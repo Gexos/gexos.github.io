@@ -59,15 +59,15 @@ html {
 }
 
 body {
-  color: #9da5b4;
-  background-color: #282c34;
+  color: #515151;
+  background-color: #fff;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
 
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
-  color: #528bff;
+  color: #268bd2;
   text-decoration: none;
 }
 a strong {
@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
   font-weight: bold;
   line-height: 1.25;
-  color: #d7dae0;
+  color: #313131;
   text-rendering: optimizeLegibility;
 }
 h1 {
@@ -110,7 +110,7 @@ p {
 }
 
 strong {
-  color: #b4bdc1;
+  color: #303030;
 }
 
 
@@ -132,14 +132,14 @@ hr {
   position: relative;
   margin: 1.5rem 0;
   border: 0;
-  border-top: 1px solid #9da5b4;
-  border-bottom: 1px solid #9da5b4;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #fff;
 }
 
 abbr {
   font-size: 85%;
   font-weight: bold;
-  color: #b4bdc1;
+  color: #555;
   text-transform: uppercase;
 }
 abbr[title] {
@@ -156,7 +156,7 @@ code {
   padding: .25em .5em;
   font-size: 85%;
   color: #bf616a;
-  background-color: #333842;
+  background-color: #f9f9f9;
   border-radius: 3px;
 }
 pre {
@@ -170,18 +170,13 @@ pre {
   white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word;
-  background-color: #333842;
+  background-color: #f9f9f9;
 }
 pre code {
   padding: 0;
   font-size: 100%;
   color: inherit;
   background-color: transparent;
-
-  display: block;
-  white-space: pre;
-  overflow-x: auto;
-  word-wrap: normal;
 }
 
 /* Pygments via Jekyll */
@@ -219,8 +214,8 @@ pre code {
 blockquote {
   padding: .5rem 1rem;
   margin: .8rem 0;
-  color: #586173;
-  border-left: .25rem solid #586173;
+  color: #7a7a7a;
+  border-left: .25rem solid #e5e5e5;
 }
 blockquote p:last-child {
   margin-bottom: 0;
@@ -243,17 +238,17 @@ img {
 table {
   margin-bottom: 1rem;
   width: 100%;
-  border: 1px solid #21252b;
+  border: 1px solid #e5e5e5;
   border-collapse: collapse;
 }
 td,
 th {
   padding: .25rem .5rem;
-  border: 1px solid #21252b;
+  border: 1px solid #e5e5e5;
 }
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
-  background-color: #333842;
+  background-color: #f9f9f9;
 }
 
 
@@ -279,8 +274,8 @@ tbody tr:nth-child(odd) th {
 .message {
   margin-bottom: 1rem;
   padding: 1rem;
-  color: #9da5b4;
-  background-color: #333842;
+  color: #717171;
+  background-color: #f9f9f9;
 }
 
 
@@ -313,10 +308,10 @@ tbody tr:nth-child(odd) th {
 .masthead-title {
   margin-top: 0;
   margin-bottom: 0;
-  color: #9da5b4;
+  color: #505050;
 }
 .masthead-title a {
-  color: #9da5b4;
+  color: #505050;
 }
 .masthead-title small {
   font-size: 75%;
@@ -342,7 +337,7 @@ tbody tr:nth-child(odd) th {
 .page-title,
 .post-title,
 .post-title a {
-  color: #d7dae0;
+  color: #303030;
 }
 .page-title,
 .post-title {
@@ -354,7 +349,7 @@ tbody tr:nth-child(odd) th {
   display: block;
   margin-top: -.5rem;
   margin-bottom: 1rem;
-  color: #9da5b4;
+  color: #9a9a9a;
 }
 
 /* Related posts */
