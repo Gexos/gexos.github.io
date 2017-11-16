@@ -24,7 +24,7 @@ if size_bytes > 2147483647:
     print('scene file is larger than ~2GB')
 ```
 
-So ideally, we'd like to have this run after a file save and let us know if we are getting close to 2 GB as well as if we exceeded this limit. Using a callback function, we can run custom code after each save command in Maya. Maya's callbacks are actually called ["scripJobs"](http://help.autodesk.com/view/MAYAUL/2018/ENU/?guid=GUID-A42F2A04-0216-408D-8073-F4D4D896CE8D).
+So ideally, we'd like to have this run after a file save and let us know if we are getting close to 2 GB as well as if we exceeded this limit. Using a callback function, we can run custom code after each save command in Maya. Maya's callbacks are actually called ["scriptJobs"](http://help.autodesk.com/view/MAYAUL/2018/ENU/?guid=GUID-A42F2A04-0216-408D-8073-F4D4D896CE8D).
 
 Here's a function which will check your Maya binary (*.mb) scene's size and warn you if you hit the bug or if you're getting close (at ~1.5 GB):
 
@@ -52,12 +52,12 @@ def check_2gb_bug():
 
 ```
 
-You can register this function as a Maya script job:
+You can register this function as a Maya script job which gets triggered after the scene is saved:
 
 ```python
 cmds.scriptJob(event=['SceneSaved', 'check_2gb_bug()'])
 ```
 
-If you now save a binary scene file, you should see the file size (in bytes) printed in the script editor. This will happen each time you save, as an indication that this function is running on each "binary save". If you would exceed (or get close) to the problematic file size, you'll get a blocking dialog window appear in Maya.
+If you now save a binary scene file, you should see the file size (in bytes) printed in the script editor. This will happen each time you save (as `*.mb`), as an indication that this function is running on each "binary save". If you would exceed (or get close) to the problematic file size, you'll get a blocking dialog window appear in Maya.
 
 If you add both the function and the scriptJob command to e.g. your [userSetup.py](http://help.autodesk.com/view/MAYAUL/2018/ENU/?guid=GUID-C0F27A50-3DD6-454C-A4D1-9E3C44B3C990), you should have this script job active each time you start Maya, without having to re-enter the code above.
