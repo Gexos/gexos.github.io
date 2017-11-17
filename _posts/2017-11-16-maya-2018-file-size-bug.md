@@ -41,13 +41,14 @@ def check_2gb_bug():
     maya_version = cmds.about(version=True)
     if '2018' in maya_version and filepath.endswith('.mb'):
         size_bytes = os.path.getsize(filepath)
-        if size_bytes > 1610612736:
-            message = ('Your scene size is getting close to the ~2GB bug!')
-            cmds.confirmDialog(icon='warning', message=message)
-        elif size_bytes > 2147483647:
+        if size_bytes > 2147483647:
             message = ('You have hit the ~2GB bug, re-save your scene in '
                        'ASCII format (*.ma) right now to avoid loosing data!')
             cmds.confirmDialog(icon='critical', message=message)
+        elif size_bytes > 1610612736:
+            message = ('Your scene size is getting close to the ~2GB bug!')
+            cmds.confirmDialog(icon='warning', message=message)
+
         else:
             print('Scene file size: ' + str(size_bytes) + ' bytes')
 
