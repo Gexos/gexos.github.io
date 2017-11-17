@@ -13,4 +13,6 @@ This tickles the funny bone.
 24.0
 ```
 
+<!--more-->
+
 Let me know in the comments below if this can be improved...
