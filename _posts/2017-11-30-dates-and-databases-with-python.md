@@ -6,7 +6,7 @@ tags: [python]
 
 It's a bit tricky to deal with dates, timezones and daylight savings when you need to store dates in e.g. a database for later reading.
 
-To me, it's a bit perplexing that all tools required to deal with this _doesn't_ come with the Python standard packages (meaning; batteries are not included). Instead we need to use three different modules: [datetime](https://docs.python.org/3/library/datetime.html), [pytz](http://pytz.sourceforge.net) and [tzlocal](https://github.com/regebro/tzlocal) where the two latter ones are not part of the standard packages and must be installed separately.
+To me, it's a bit perplexing that all tools required to deal with this _doesn't_ come with the Python standard library (meaning; batteries are not included). Instead we need to use three different modules: [datetime](https://docs.python.org/3/library/datetime.html), [pytz](http://pytz.sourceforge.net) and [tzlocal](https://github.com/regebro/tzlocal) where the two latter ones are not part of the standard library and must be installed separately via e.g. `pip`.
 
 Here follows some personal notes on how to store and read back dates with reliability and control of the timezones and daylight savings.
 
