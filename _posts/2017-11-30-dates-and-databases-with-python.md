@@ -82,6 +82,6 @@ In the previous code block, I'm hardcoding the `timezone` variable. You may want
 
 ### Closing comments
 
-Having all this code finally assembled and condensed in a blog post like this is nice and neat, but why is this so hard to do currently, and why does this require three separate modules of which two are not included in the standard packages?
+Having all this code finally assembled and condensed in a blog post like this is nice and neat, but why is this so hard to do currently, and why does this require three separate modules of which two are not included in the standard library?
 
 I guess the answer is I should shut up because I'm already spoiled with Python? ;)
