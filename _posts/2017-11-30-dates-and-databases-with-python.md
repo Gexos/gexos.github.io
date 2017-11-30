@@ -44,7 +44,7 @@ When storing dates in e.g. a database, store them aware of [UTC](https://en.wiki
 Please note, the actual local time for me (who is UTC+1) is `09:01:19` and not `08:01:19`. But instead of storing my local UTC+1 datetime, we store a datetime which is just aware of UTC (thanks to `pytz.utc`).
 
 
-### Reading UTC-aware dates and applying local timezone and daylight savings
+### Reading UTC-aware dates back and showing them accurately
 
 Later, when reading the dates back from e.g. a database, apply the user's local timezone and any daylight savings (in my case UTC+1 right now).
 
