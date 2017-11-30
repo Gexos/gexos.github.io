@@ -59,7 +59,7 @@ Later, when reading the dates back from e.g. a database, apply the user's local 
 2017-11-30 09:01:19.676817+01:00
 ```
 
-Now I get the date I was expecting. This all allows us to show a local time for any user regardless of where in the world they are located.
+Now I get the time I was expecting, my local time `09:01:19`.
 
 
 ### Avoid hardcoding the local timezone
