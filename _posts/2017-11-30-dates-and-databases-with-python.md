@@ -41,7 +41,7 @@ When storing dates in e.g. a database, store them aware of [UTC](https://en.wiki
 2017-11-30 08:01:19.676817+00:00
 ```
 
-Please note, the actual local time for me (who is UTC+1) is `09:01:19` and not `08:01:19`. But instead of storing my local UTC+1 datetime, we store a datetime which is just aware of UTC, thanks to `pytz.utc` and the [tz database](https://en.wikipedia.org/wiki/Tz_database).
+Please note, the actual local time for me (who is UTC+1) is `09:01:19` and not `08:01:19`. But instead of storing my local UTC+1 datetime, we store a datetime which is just aware of UTC, thanks to `pytz.utc`.
 
 
 ### Reading UTC-aware dates back and showing them accurately
@@ -59,7 +59,7 @@ Later, when reading the dates back from e.g. a database, apply the user's local 
 2017-11-30 09:01:19.676817+01:00
 ```
 
-Now I get the time I was expecting, my local time `09:01:19`.
+Now I get the time I was expecting, my local time `09:01:19`, again thanks to `pytz` and the [tz database](https://en.wikipedia.org/wiki/Tz_database) which it is using.
 
 For a list of all other timezones, see [here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
 
