@@ -61,7 +61,7 @@ Later, when reading the dates back from e.g. a database, apply the user's local 
 
 Now I get the time I was expecting, my local time `09:01:19`, again thanks to `pytz` and the [tz database](https://en.wikipedia.org/wiki/Tz_database) which it is using.
 
-For a list of all other timezones, see [here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
+For a list of all timezones supported by `pytz`, see [here](https://github.com/newvem/pytz/blob/f137ff00112a9682bc4e4945067b3b88f158d010/pytz/zone.tab).
 
 
 ### Avoid hardcoding the local timezone
