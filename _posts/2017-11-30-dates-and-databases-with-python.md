@@ -41,12 +41,12 @@ When storing dates in e.g. a database, store them aware of [UTC](https://en.wiki
 2017-11-30 08:01:19.676817+00:00
 ```
 
-Please note, the actual local time for me (who is UTC+1) is `09:01:19` and not `08:01:19`. But instead of storing my local UTC+1 datetime, we store a datetime which is just aware of UTC (thanks to `pytz.utc`).
+Please note, the actual local time for me (who is UTC+1) is `09:01:19` and not `08:01:19`. But instead of storing my local UTC+1 datetime, we store a datetime which is just aware of UTC, thanks to `pytz.utc` and the [tz database](https://en.wikipedia.org/wiki/Tz_database).
 
 
 ### Reading UTC-aware dates back and showing them accurately
 
-Later, when reading the dates back from e.g. a database, apply the user's local timezone and any daylight savings (in my case UTC+1 right now).
+Later, when reading the dates back from e.g. a database, apply the user's local timezone and any daylight savings (in my case UTC+1 right now since I'm in Sweden).
 
 ```python
 >>> import datetime
@@ -61,10 +61,12 @@ Later, when reading the dates back from e.g. a database, apply the user's local 
 
 Now I get the time I was expecting, my local time `09:01:19`.
 
+For a list of all other timezones, see [here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
+
 
 ### Avoid hardcoding the local timezone
 
-In the previous code block, I'm hardcoding the `timezone` variable. You may want to read the system's timezone and just use that. This can be achieved using the `tzlocal` module.
+In the previous code block, I'm hardcoding the `timezone` variable. You may want to read the client system's timezone and just use that. This can be achieved using the `tzlocal` module.
 
 ```python
 >>> import datetime
@@ -77,10 +79,9 @@ In the previous code block, I'm hardcoding the `timezone` variable. You may want
 2017-11-30 09:01:19.676817+01:00
 ```
 
+
 ### Closing comments
 
 Having all this code finally assembled and condensed in a blog post like this is nice and neat, but why is this so hard to do currently, and why does this require three separate modules of which two are not included in the standard packages?
 
 I guess the answer is I should shut up because I'm already spoiled with Python? ;)
-
-Please let me know what you think in the comments below or if you think any of this could be improved!
