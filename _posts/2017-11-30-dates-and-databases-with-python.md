@@ -31,7 +31,7 @@ However, this does not tell us whether daylight savings was in effect or not. An
 
 ### Storing dates as UTC-aware
 
-When storing dates in e.g. a database, store them as "UTC-aware":
+When storing dates in e.g. a database, store them aware of [UTC](https://en.wikipedia.org/wiki/Coordinated_Universal_Time) (or "UTC-aware"):
 
 ```python
 >>> import datetime
@@ -44,9 +44,9 @@ When storing dates in e.g. a database, store them as "UTC-aware":
 Please note, the actual local time for me (who is UTC+1) is `09:01:19` and not `08:01:19`. But instead of storing my local UTC+1 datetime, we store a datetime which is just aware of UTC (thanks to `pytz.utc`).
 
 
-### Reading UTC-aware dates and applying local timezone
+### Reading UTC-aware dates and applying local timezone and daylight savings
 
-Later, when reading the dates back from e.g. a database, apply the user's local timezone (in my case UTC+1).
+Later, when reading the dates back from e.g. a database, apply the user's local timezone and any daylight savings (in my case UTC+1 right now).
 
 ```python
 >>> import datetime
@@ -59,7 +59,7 @@ Later, when reading the dates back from e.g. a database, apply the user's local 
 2017-11-30 09:01:19.676817+01:00
 ```
 
-Now I get the date I was expecting, but we store an UTC-aware (or UTC-agnostic) date in the database, which allows us to show a local time for any user regardless of where in the world they are located.
+Now I get the date I was expecting. This all allows us to show a local time for any user regardless of where in the world they are located.
 
 
 ### Avoid hardcoding the local timezone
