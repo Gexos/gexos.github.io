@@ -54,6 +54,7 @@ Host codereview.qt-project.org
 Port 29418
 User <your_qt_username>
 IdentityFile ~/.ssh/qt_gerrit_id_rsa
+Ciphers +aes256-cbc
 ```
 
 If you don't know what to put in `<your_qt_username>`, you need to [set up an account with Qt](https://login.qt.io/register).
@@ -115,7 +116,7 @@ I do it like described in the docs, which also verifies that the SSH keys are se
 
 ```bash
 cd ~/code/repos/_gerrit/pyside-setup
-# commit-msg hook file
+curl -o .git/hooks/commit-msg http://codereview.qt-project.org/tools/hooks/commit-msg
 gitdir=$(git rev-parse --git-dir); scp -p codereview.qt-project.org:hooks/commit-msg ${gitdir}/hooks/
 ```
 
