@@ -191,7 +191,7 @@ Clone the `pyside-setup` repository and have it also pull down its gitmodules:
 
 ```bash
 # Edited on 2017-07-20; added branch specific to Qt 5.6
-git clone --recursive --branch 5.6 https://codereview.qt-project.org/pyside/pyside-setup
+git clone --recursive --branch 5.6 https://code.qt.io/pyside/pyside-setup.git
 ```
 
 Autodesk has also provided the version of PySide2 they used in Maya 2017 on their [open source distributions page](http://www.autodesk.com/company/legal-notices-trademarks/open-source-distribution). If you prefer that, you can download the PySide2.zip file from there and use that instead.
