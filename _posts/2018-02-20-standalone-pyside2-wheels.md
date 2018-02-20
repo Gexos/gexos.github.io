@@ -11,6 +11,7 @@ The Qt Company has yet to release official, standalone and pip-installable PySid
 - [fredrikaverpil/pyside2-macos](https://github.com/fredrikaverpil/pyside2-macos)
 - [fredrikaverpil/pyside2-linux](https://github.com/fredrikaverpil/pyside2-linux)
 
+<!--more-->
 
 ### Download
 
