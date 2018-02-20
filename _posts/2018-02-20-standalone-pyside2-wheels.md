@@ -40,7 +40,7 @@ PySide2.__build_commit_hash_described__  # the result of 'git describe commmit'
 
 ### macOS deployment target
 
-For macOS, wheel naming is a little misleading. They may say `macosx-10.6` which indicates they were built using Python which was built on macOS 10.6. However, Qt itself was built on other macOS versions and therefore the wheel won't work on 10.6. Instead this is the deployment targets:
+For macOS, wheel naming is a little misleading. They may say `macosx_10_6` which indicates they were built using Python which was built on macOS 10.6. However, Qt itself was built on other macOS versions and therefore the wheel won't work on 10.6. Instead this is the deployment targets:
 
 - PySide2-5.6: macOS 10.7
 - PySide2-5.9: macOS 10.10
