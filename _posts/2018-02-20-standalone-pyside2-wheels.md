@@ -28,8 +28,6 @@ Since Github doesn't have a storage limit to releases as of writing this, I woul
 
 The Qt Company still doesn't maintain the version string of PySide2, so therefore I'm tagging releases based on the date when they were built.
 
-You can check the git commit's CI build log to fetch the `git log` output or check the date of each [pyside-setup](http://code.qt.io/cgit/pyside/pyside-setup.git/) branch to figure out which commit was built for a particular release.
-
 If you're wondering what version you're running, you may be able to query any of the following to receive some hints, which became available in PySide2 [sometime in late August 2017](https://codereview.qt-project.org/#/c/202199/):
 
 ```python
@@ -39,3 +37,4 @@ PySide2.__build_commit_hash__  # the SHA1 hash of the top-level commit
 PySide2.__build_commit_hash_described__  # the result of 'git describe commmit'
 ```
 
+You can then cross reference the commit date/hash against the [`pyside-setup` git repository](http://code.qt.io/cgit/pyside/pyside-setup.git/) if you wish to figure out exactly which commit was used to build the wheel. Or you can check the respective CI output where I print the commit's info (`git log -n 1`).
