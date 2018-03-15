@@ -11,7 +11,7 @@ As outlined [here](https://stackoverflow.com/a/40261418/2448495), Docker for Win
 bcdedit /set hypervisorlaunchtype off
 ```
 
-And to start using Docker again, re-enable Hyper-V:
+And to start using Docker for Windows again, re-enable Hyper-V:
 
 ```powershell
 # Run from elevated prompt (admin privileges)
