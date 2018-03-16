@@ -5,7 +5,7 @@ title: About
 
 ![]({{ site.url }}/blog/assets/fredrik.jpg)
 
-Throughout the years I have been spending my professional life within the digital domain of creativity; from web site design/development to 3D animation and digital visual effects for feature films. With 15+ years of hands on experience within the field of computer graphics, including co-founding [Filmgate](http://www.filmgate.se), having catered to clients and coached production teams in the ad agency world as well as having developed several graphics pipelines, I now take part in the extraordinary team of talent at [Industriromantik](http://www.industriromantik.se) as a multi-disciplinary creative and Technical Director.
+Throughout the years I have been spending my professional life within the digital domain of creativity; from web site design/development to 3D animation and digital visual effects for feature films. With professional experience within the field of 3D graphics since 2005, including co-founding [Filmgate](http://www.filmgate.se), I now take part in the extraordinary team of talent at [Industriromantik](http://www.industriromantik.se) as Technical Director. This is a multi-faceted role which involves a great deal of software architecting, programming and devops.
 
 ## Get in touch!
 
