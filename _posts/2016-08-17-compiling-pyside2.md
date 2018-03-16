@@ -10,17 +10,12 @@ Here's how to compile PySide2 on Linux, Mac OS X and Windows.
 
 [Maya 2017](http://www.autodesk.com/products/maya) shipped with [PySide2](https://wiki.qt.io/PySide2) (2.0.0~alpha0) built against [Qt](https://www.qt.io/developers/) 5.6.1, so that's the version of Qt I'm using in this guide as well as 64-bit [Python](https://www.python.org).
 
-**Note #1:** Before reading on, you may want to skip this alltogether and go directly to my [pre-built Python wheels](https://github.com/fredrikaverpil/pyside2-wheels) and the most up to date build recipes there.
+**UPDATE:** Before reading on, you may want to skip this alltogether and go directly to my pre-built standalone Python wheels and the most up to date build recipes there:
+* [https://github.com/fredrikaverpil/pyside2-linux](fredrikaverpil/pyside2-linux)
+* [https://github.com/fredrikaverpil/pyside2-macos](fredrikaverpil/pyside2-macos)
+* [https://github.com/fredrikaverpil/pyside2-windows](fredrikaverpil/pyside2-windows)
 
-**Note #2:** Before we start, make sure to cast a friendly vote [here](https://bugreports.qt.io/browse/PYSIDE-558) to have The Qt Company (QtC) prioritize the development of official PySide2 wheels.
-
-**Update 2017-01-19:** Added clarification; the state of Python 2.x/3.5 with PySide2.
-
-**Update 2017-07-19:** In order to successfully build wheels against Qt5.6, you need to make sure you're using the `5.6` branch of the `pyside-setup` repository and *not* the `dev` branch.
-
-**Update 2017-07-20:** Most build instructions are out of date. Please refer to the most up to date instructions [here](https://github.com/fredrikaverpil/pyside2-wheels).
-
-**Update 2017-08-28:** You may want to just `conda install pyside2`, see [here](https://github.com/conda-forge/pyside2-feedstock) for more info.
+Also, official standalone wheels have been [released](http://lists.qt-project.org/pipermail/pyside/2018-March/002537.html)!
 
 <!--more-->
 
