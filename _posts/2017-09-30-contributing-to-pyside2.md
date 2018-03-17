@@ -57,7 +57,7 @@ IdentityFile ~/.ssh/qt_gerrit_id_rsa
 Ciphers +aes256-cbc
 ```
 
-If you don't know what to put in `<your_qt_username>`, you need to [set up an account with Qt](https://login.qt.io/register).
+If you don't know what to put in `<your_qt_username>`, you need to [set up an account with Qt](https://login.qt.io/register). Also make sure you set up the "New Contributor Agreement".
 
 
 ### Set up Git
