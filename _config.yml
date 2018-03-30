@@ -6,13 +6,13 @@ highlighter:          rouge
 permalink:            pretty
 
 # Setup
-title:                Fredrik Averpil
+title:                Gexos
 tagline:              My personal blog
-description:          My personal blog – on Python development, 3D graphics, compositing and photography.
-url:                  https://fredrikaverpil.github.io
+description:          words on tech, sec and other stuff
+url:                  https://gexos.github.io
 baseurl:
 paginate:             5
-name:                 Fredrik Averpil
+name:                 Giorgos Xanthopoulos
 
 gems:
   - jekyll-seo-tag
@@ -21,21 +21,19 @@ gems:
 
 # SEO
 twitter:
-  username:           fredrikaverpil
-  url:                https://twitter.com/fredrikaverpil
+  username:           TheGexos
+  url:                https://twitter.com/TheGexos
 social:
-  name:               Fredrik Averpil
+  name:               Giorgos Xanthopoulos
   links:
-    - https://linkedin.com/in/fredrik
-    - https://www.facebook.com/fredrik.averpil
-    - https://github.com/fredrikaverpil
+    - https://github.com/gexos
 
 # Custom vars
 custom_pages:
   feed:               /atom.xml
 github:
-    url:              https://github.com/fredrikaverpil
-    repo:             https://github.com/fredrikaverpil/fredrikaverpil.github.io
+    url:              https://github.com/gexos
+    repo:             https://github.com/gexos/gexos.github.io
 excerpt_separator:    <!--more-->
 google_analytics:     UA-70773524-1
 hyde_version:         2.1.0
@@ -48,4 +46,4 @@ force_https:          true
 comments:
   use_disqus:         true
   use_googleplus:     false
-  disqus_shortname:   ffredrikk
+  disqus_shortname:   gexos
