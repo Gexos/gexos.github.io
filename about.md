@@ -5,7 +5,13 @@ title: About
 
 ![]({{ site.url }}/blog/assets/fredrik.jpg)
 
-Throughout the years I have been spending my professional life within the digital domain of creativity; from web site design/development to 3D animation and digital visual effects for feature films. With professional experience within the field of 3D graphics since 2005, including co-founding [Filmgate](http://www.filmgate.se), I now take part in the extraordinary team of talent at [Industriromantik](http://www.industriromantik.se) as Technical Director. This is a multi-faceted role which involves a great deal of software architecting, programming and devops.
+My name is Giorgos and I am a certified computer and network technician living in Greece, I am heavily interested in various aspects of Computer and Network Security, especially in malware analysis, web application security and cryptography.
+
+I have some experience in various programming/scripting languages such as: Python, PowerShell, AutoIt, and Web related languages like: HTML, XML, CSS, Javascript.
+
+I have also a strong affection for Open Source, and I try to contribute to the OSS community as much as I can.
+
+You can also find me on [twitter](https://twitter.com/theGexos), and [github](https://github.com/Gexos).
 
 ## Get in touch!
 
