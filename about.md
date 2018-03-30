@@ -3,8 +3,6 @@ layout: page
 title: About
 ---
 
-![]({{ site.url }}/blog/assets/fredrik.jpg)
-
 My name is Giorgos and I am a certified computer and network technician living in Greece, I am heavily interested in various aspects of Computer and Network Security, especially in malware analysis, web application security and cryptography.
 
 I have some experience in various programming/scripting languages such as: Python, PowerShell, AutoIt, and Web related languages like: HTML, XML, CSS, Javascript.
@@ -15,16 +13,19 @@ You can also find me on [twitter](https://twitter.com/theGexos), and [github](ht
 
 ## Get in touch!
 
-fredrik@averpil.com  
-+46-708-121275  
-[keybase.io/fredrikaverpil](https://keybase.io/fredrikaverpil)  
-[github.com/fredrikaverpil](https://github.com/fredrikaverpil)  
-[linkedin.com/in/fredrik](https://linkedin.com/in/fredrik)
+You can contact me by sending an email to gexxos@gmail.com , for secure communication you can use My GPG public key avaliable here.
+
+Licence
+
+Except where otherwise noted, content on this site is licensed under a Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) license.  
 
 
-## Blog info
 
-This blog is based on the excellent [Hyde]({{ site.hyde_repo }}) theme (v{{ site.hyde_version }}) for [Poole](http://getpoole.com), running on [Github Pages](https://pages.github.com) but with some modifications:
+## About This Blog
+ 
+This blog, is a personal one and it serves as a place to talk about my above-mentioned interests and anything else I find interesting in general. The blog's name (Gexos) is a compination of my first and last name which is Giorgos Xanthopoulos.
+
+The blog is based on the excellent [Hyde]({{ site.hyde_repo }}) theme (v{{ site.hyde_version }}) for [Poole](http://getpoole.com), running on [Github Pages](https://pages.github.com) but with some modifications from [Fredrik Averpil](https://github.com/fredrikaverpil/fredrikaverpil.github.io):
 
 - Tags
 - Post archive
