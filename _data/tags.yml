@@ -1,11 +1,9 @@
+security:
+  name: Security 
 bash:
   name: Bash
-chromeos:
-  name: Chrome OS
-docker:
-  name: Docker
-gce:
-  name: GCE
+autoit:
+  name: AutoIt
 github:
   name: Github
 github-pages:
@@ -14,22 +12,12 @@ jekyll:
   name: Jekyll
 linux:
   name: Linux
-maya:
-  name: Maya
-mentalray:
-  name: Mental Ray
-mel:
-  name: MEL
-nuke:
-  name: Nuke
-osx:
-  name: OS X
 photography:
   name: Photography
 portfolio:
   name: Portfolio
-pstools:
-  name: PsTools
+facebook:
+  name: Facebook
 python:
   name: Python
 pyqt:
@@ -38,11 +26,15 @@ pyside:
   name: PySide
 qtpy:
   name: Qt.py
-video:
-  name: Video
-vray:
-  name: V-Ray
+hacking:
+  name: Hacking
 windows:
   name: Windows
-workflow:
-  name: Workflow
+powershell:
+  name: Powershell
+generall:
+  name: Generall
+virus:
+  name: Virus
+tools:
+  name: Tools
