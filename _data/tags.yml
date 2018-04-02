@@ -1,5 +1,3 @@
-applescript:
-  name: Applescript
 bash:
   name: Bash
 chromeos:
