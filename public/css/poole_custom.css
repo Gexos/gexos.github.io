@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
   font-weight: bold;
   line-height: 1.25;
-  color: #d7dae0;
+  color: #21252b;
   text-rendering: optimizeLegibility;
 }
 h1 {
@@ -406,7 +406,7 @@ tbody tr:nth-child(odd) th {
 .pagination-item {
   display: block;
   padding: 1rem;
-  border: 1px solid #eee;
+  border: 1px solid #21252b;
 }
 .pagination-item:first-child {
   margin-bottom: -1px;
