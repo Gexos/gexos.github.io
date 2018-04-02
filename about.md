@@ -9,16 +9,12 @@ I have some experience in various programming/scripting languages such as: Pytho
 
 I have also a strong affection for Open Source, and I try to contribute to the OSS community as much as I can.
 
-You can also find me on [twitter](https://twitter.com/theGexos), and [github](https://github.com/Gexos).
 
 ## Get in touch!
 
-You can contact me by sending an email to gexxos@gmail.com , for secure communication you can use My GPG public key avaliable here.
+You can contact me by sending an email to gexxos@gmail.com , for secure communication you can use My [GPG](https://www.gnupg.org/) public key avaliable [here](https://gist.github.com/Gexos/0d0b1e4317081394f32281315d54db48).
 
-Licence
-
-Except where otherwise noted, content on this site is licensed under a Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) license.  
-
+You can also find me on [twitter](https://twitter.com/theGexos), and [github](https://github.com/Gexos).
 
 
 ## About This Blog
@@ -40,3 +36,8 @@ The blog is based on the excellent [Hyde]({{ site.hyde_repo }}) theme (v{{ site.
 - Jekyll SEO
 
 The source code for this blog is available [here]({{ site.github.repo }}).
+
+
+##Licence
+
+Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) license](https://creativecommons.org/licenses/by-sa/4.0/).
