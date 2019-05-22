@@ -12,7 +12,7 @@ I have also a strong affection for Open Source, and I try to contribute to the O
 
 ## Get in touch!
 
-You can contact me by sending an email to [gexxos@gmail.com]() , for secure communication you can use My [GPG](https://www.gnupg.org/) public key avaliable [here](https://gist.github.com/Gexos/0d0b1e4317081394f32281315d54db48).
+You can contact me by sending an email to [gexxos@gmail.com]() , for secure communication you can use My [GPG](https://www.gnupg.org/) public key avaliable [here](https://gist.github.com/Gexos/b76f0a80e900c2ebffcdd3040af03533).
 
 You can also find me on [twitter](https://twitter.com/theGexos), and [github](https://github.com/Gexos).
 
