@@ -7,7 +7,7 @@ tags: [cookies, privacy, security]
 
 ### Why they exist, what capabilities they offer and what problems they create.
 Cookies are text files, and they provide many useful features on the Web, but there are two things that cause a reaction around cookies: The first is something that has plagued consumers for decades. Let's say you bought something from a traditional mail-order list. The company has your name, address and phone number from your order and also knows what things or services you have purchased. It may sell your information to others who may want to sell similar products or services to you. This is the fuel that makes telemarketing and junk mail (spam) possible. A website can track not only your purchases but also the pages you've read, the ads you click on, etc. If you then purchase something online and enter your name and address, then the site knows a lot more about you than a traditional mail-order company. This makes targeting a lot more accurate, and it makes many people feel uncomfortable.
-
+<!--more-->
 Different sites have different policies regarding cookies and the protection of personal data.
 
 Every site that respects its consumers and users have a strict privacy policy and does not sell or share their personal information with any third party, except where consumers themselves choose to do so (for example in a opt-in - opt-out e-mail program). With the consumer-user opt-in of the site, aggregated data is created and distributed accordingly.
