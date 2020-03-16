@@ -13,7 +13,7 @@ No, seriously, don't. You're probably reading this because you've asked what VPN
 Note: The content in this post does not apply to using VPN for their intended purpose; that is, as a virtual private (internal) network. It only applies to using it as a glorified proxy, which is what every third-party "VPN provider" does.
 
 A Russian translation of this article can be found [here](https://tdemin.github.io/posts/2017-08-13-dont-use-vpn-services_ru), contributed by Timur Demin. There's also [this article](https://schub.io/blog/2019/04/08/very-precarious-narrative.html) about VPN services, which is honestly better written (and has more cat pictures!) than my article.
-
+<!--more-->
 ### Why not?
 Because a VPN in this sense is just a glorified proxy. The VPN provider can see all your traffic, and do with it what they want - including logging.
 
