@@ -38,5 +38,5 @@ virus:
   name: Virus
 tools:
   name: Tools
-  git:
+git:
   name: Git
