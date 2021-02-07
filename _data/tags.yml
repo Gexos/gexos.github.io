@@ -40,3 +40,5 @@ tools:
   name: Tools
 git:
   name: Git
+tryhackme:
+  name: TryHackMe
