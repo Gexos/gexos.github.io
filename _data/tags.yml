@@ -42,3 +42,7 @@ git:
   name: Git
 tryhackme:
   name: TryHackMe
+overthewire:
+  name: OverTheWire
+bandit:
+  name: Bandit
