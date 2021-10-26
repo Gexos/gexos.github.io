@@ -4,7 +4,7 @@ title: Links
 ---
 
 Links to various websites/blogs, that may be of interest to you.
-<a id="my-header"></a> Header
+
 - Ελληνικά
 
 - Security
@@ -21,7 +21,7 @@ Links to various websites/blogs, that may be of interest to you.
 
 - Books
 
- [Header](#my-header)
+
 Ελληνικά:
 
     http://conta.uom.gr/index.htm
