@@ -46,3 +46,5 @@ overthewire:
   name: OverTheWire
 bandit:
   name: Bandit
+http:
+  name: Http
