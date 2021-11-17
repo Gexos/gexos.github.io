@@ -48,3 +48,5 @@ bandit:
   name: Bandit
 http:
   name: Http
+networking:
+  name: Networking
