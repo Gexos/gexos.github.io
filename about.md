@@ -3,9 +3,7 @@ layout: page
 title: About
 ---
 
-My name is Giorgos and I am a certified computer and network technician living in Greece, I am heavily interested in various aspects of Computer and Network Security, especially in malware analysis, web application security and cryptography.
-
-I have some experience in various programming/scripting languages such as: Python, PowerShell, AutoIt, and Web related languages like: HTML, XML, CSS, Javascript.
+My name is Giorgos and I am an IT technician living in Greece, I am heavily interested in various aspects of Computer and Network Security, especially in malware analysis, web application security and cryptography.
 
 I have also a strong affection for Open Source, and I try to contribute to the OSS community as much as I can.
 
