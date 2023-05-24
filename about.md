@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-My name is Giorgos and I am an IT technician living in Greece, I am heavily interested in various aspects of Computer and Network Security, especially in malware analysis, web application security and cryptography.
+My name is Giorgos and I am an IT technician living in Greece, and I am heavily interested in various aspects of Computer and Network Security.
 
 I have also a strong affection for Open Source, and I try to contribute to the OSS community as much as I can.
 
