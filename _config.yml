@@ -35,7 +35,6 @@ github:
     url:              https://github.com/gexos
     repo:             https://github.com/gexos/gexos.github.io
 excerpt_separator:    <!--more-->
-google_analytics:     UA-70773524-1
 hyde_version:         2.1.0
 hyde_url:             http://hyde.getpoole.com
 hyde_repo:            https://github.com/poole/hyde
